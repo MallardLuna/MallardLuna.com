@@ -1,0 +1,187 @@
+/* Root */
+
+:root {
+    /* These colours are my own. */
+    --background: #FFFAFB;
+    --card: #FFE5EA;
+    --card-border: #FFCCD6;
+    --foreground: #402726;
+    --foreground-soft: #7A5352;
+    --accent: #BF4440;
+    --accent-dark: #993633;
+
+    /* And these come from Catppuccin */
+    --status-active-background: #A6E3A1;
+    --status-active-foreground: #1D4913;
+    --status-active-border: #40A02B;
+    --status-hiatus-background: #F9E2AF;
+    --status-hiatus-foreground: #633F0D;
+    --status-hiatus-border: #DF8E1D;
+}
+
+body {
+    margin: 0;
+    padding: 64px 24px;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "JetBrains Mono", monospace;
+    text-align: justify;
+    text-wrap: pretty;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* Generic */
+
+section {
+    margin-bottom: 48px;
+}
+
+.subsection {
+    padding: 16px 24px;
+    background-color: var(--card);
+    border: 2px solid var(--card-border);
+    border-radius: 24px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+h2 {
+    margin: 0 0 16px;
+    color: var(--accent);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--accent-dark);
+    border-bottom: 2px solid var(--card-border);
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom-color: var(--accent-dark);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    position: relative;
+    margin-bottom: 24px;
+    background-color: var(--card);
+    border: 2px solid var(--card-border);
+    border-radius: 50%;
+}
+
+header .avatar span {
+    color: var(--accent-dark);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header .avatar img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: transparent;
+    border-radius: 50%;
+}
+
+header p {
+    margin: 0;
+    color: var(--foreground-soft);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Projects */
+
+.projects .subsection {
+    margin-bottom: 16px;
+}
+
+.projects .subsection .head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.projects .subsection .head .status {
+    padding: 4px 16px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.projects .subsection .head .status.active {
+    background-color: var(--status-active-background);
+    color: var(--status-active-foreground);
+    border: 2px solid var(--status-active-border);
+}
+
+.projects .subsection .head .status.hiatus {
+    background-color: var(--status-hiatus-background);
+    color: var(--status-hiatus-foreground);
+    border: 2px solid var(--status-hiatus-border);
+}
+
+.projects .subsection p {
+    color: var(--foreground-soft);
+    font-size: 14px;
+}
+
+.projects .subsection a {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.projects .more-projects {
+    color: var(--foreground-soft);
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    color: var(--foreground-soft);
+    font-size: 12px;
+}
