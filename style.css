@@ -97,6 +97,7 @@ p:last-child {
 a {
     color: var(--accent-dark);
     border-bottom: 2px solid var(--card-border);
+    transition: border-color 0.2s ease;
     text-decoration: none;
 }
 
