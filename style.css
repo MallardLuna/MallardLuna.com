@@ -19,6 +19,26 @@
     --status-hiatus-border: #DF8E1D;
 }
 
+/* Derived from the ones above, but dark! */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #1F1416;
+        --card: #2E1F21;
+        --card-border: #743E47;
+        --foreground: #EBE0E2;
+        --foreground-soft: #D6C2C5;
+        --accent: #E6B3BB;
+        --accent-dark: #D98C99;
+
+        --status-active-background: #1B2E1E;
+        --status-active-foreground: #A6E3A1;
+        --status-active-border: #40A02B;
+        --status-hiatus-background: #362917;
+        --status-hiatus-foreground: #F9E2AF;
+        --status-hiatus-border: #DF8E1D;
+    }
+}
+
 body {
     margin: 0;
     padding: 64px 24px;
