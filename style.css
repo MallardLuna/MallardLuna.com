@@ -188,9 +188,13 @@ header p {
     font-size: 14px;
 }
 
-.projects .subsection a {
-    display: inline-block;
+.projects .subsection .links {
+    display: flex;
+    justify-content: space-between;
     margin-top: 8px;
+}
+
+.projects .subsection .links a {
     font-size: 12px;
     font-weight: 700;
 }
