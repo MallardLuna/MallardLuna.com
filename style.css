@@ -161,6 +161,7 @@ header .avatar img {
     position: absolute;
     color: transparent;
     border-radius: 50%;
+    image-rendering: pixelated;
 }
 
 header p {
